@@ -8,7 +8,7 @@ app.use(cors()); // React bilan aloqa uchun
 app.use(express.json()); // JSON so‘rovlarni qabul qilish uchun
 
 // Marshrutlarni ulash
-app.use('/api/api', carRoutes);
+app.use('/api', carRoutes);
 
 const PORT = 5000;
 app.listen(PORT, () => {
