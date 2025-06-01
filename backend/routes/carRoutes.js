@@ -86,7 +86,7 @@ router.post('/cars', async (req, res) => {
     // Agar narx kiritilmagan bo‘lsa, avtomatik hisoblash
     if (!newCar.price) {
       try {
-        const predictResponse = await axios.post('http://localhost:5000/api/predict', newCar, { timeout: 5000 });
+        const predictResponse = await axios.post('http://51.20.108.48:5000/api/predict', newCar, { timeout: 5000 });
         newCar.price = predictResponse.data.predicted_price;
       } catch (predictErr) {
         console.error('Error predicting price:', predictErr.message);
