@@ -11,6 +11,6 @@ app.use(express.json()); // JSON so‘rovlarni qabul qilish uchun
 app.use('/api', carRoutes);
 
 const PORT = 5000;
-app.listen(PORT, '0.0.0.0', () => {
+app.listen(PORT, () => {
   console.log(`Server ${PORT}-portda BARCHA IP manzillarda ishlayapti`);
 });
