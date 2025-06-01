@@ -1,0 +1,295 @@
+/* Umumiy stil */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1a3c5e 0%, #2a5c8a 100%);
+  min-height: 100vh;
+  color: #fff;
+}
+
+/* Sarlavha */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Forma */
+.form-section {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+.car-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.car-form input,
+.car-form select {
+  padding: 10px;
+  width: 180px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.car-form input::placeholder,
+.car-form select {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.car-form input:focus,
+.car-form select:focus {
+  border-color: #1e90ff;
+  background: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-add,
+.btn-predict {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn-add {
+  background-color: #1e90ff;
+}
+
+.btn-predict {
+  background-color: #00b7eb;
+}
+
+.btn-add:hover {
+  background-color: #1a80e5;
+  transform: translateY(-2px);
+}
+
+.btn-predict:hover {
+  background-color: #00a3d6;
+  transform: translateY(-2px);
+}
+
+.success-message {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: rgba(46, 204, 113, 0.2);
+  color: #2ecc71;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.prediction {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.prediction span {
+  color: #ffeb3b;
+  font-weight: bold;
+}
+
+/* Diagramma */
+.chart-section {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+.chart-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Qidiruv maydoni */
+.search-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-input:focus {
+  border-color: #1e90ff;
+  background: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+/* Jadval */
+.table-section {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.table-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.table-container {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.car-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.car-table th,
+.car-table td {
+  padding: 14px;
+  text-align: center; /* Matnni markazga joylashtirish */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.95rem;
+}
+
+.car-table th {
+  background: linear-gradient(90deg, #1e90ff, #00b7eb);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.car-table tr {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.car-table tr:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.01);
+}
+
+.car-table td {
+  color: #e0e0e0;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.car-table td:last-child {
+  color: #ffeb3b;
+  font-weight: 500;
+}
+
+.car-table tr.new-car {
+  background-color: rgba(30, 144, 255, 0.3);
+  animation: highlight 1.5s ease-out;
+}
+
+@keyframes highlight {
+  0% {
+    background-color: rgba(30, 144, 255, 0.5);
+  }
+  100% {
+    background-color: rgba(30, 144, 255, 0.3);
+  }
+}
+
+/* Loading va No Results */
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: #1e90ff;
+  font-size: 1.2rem;
+}
+
+.no-results {
+  text-align: center;
+  padding: 20px;
+  color: #ff6b6b;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Sahifalash */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.btn-page {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1e90ff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1rem;
+}
+
+.btn-page:disabled {
+  background-color: #5a8db3;
+  cursor: not-allowed;
+}
+
+.btn-page:hover:not(:disabled) {
+  background-color: #1a80e5;
+  transform: translateY(-2px);
+}
+
+.pagination span {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
+}
