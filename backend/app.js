@@ -14,4 +14,3 @@ const PORT = 5000;
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server ${PORT}-portda BARCHA IP manzillarda ishlayapti`);
 });
-http://51.20.108.48
