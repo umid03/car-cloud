@@ -61,7 +61,7 @@ npm install
 node app.js
 ```
 
-> Backend server odatda `http://localhost:3000` da ishlaydi (aniq port `app.js` faylida belgilangan).
+> Backend server odatda `http://51.20.108.48:3000` da ishlaydi (aniq port `app.js` faylida belgilangan).
 
 ---
 
@@ -75,7 +75,7 @@ npm install
 npm run dev
 ```
 
-> Frontend odatda `http://localhost:5173` da ishga tushadi.
+> Frontend odatda `http://51.20.108.48:5173` da ishga tushadi.
 
 ---
 

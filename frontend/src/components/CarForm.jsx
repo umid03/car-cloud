@@ -16,7 +16,7 @@ function CarForm({ onAdd }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:5000/api/cars', formData)
+    axios.post('http://51.20.108.48:5000/api/cars', formData)
       .then(() => {
         onAdd();
         setFormData({ ...formData }); // Formani tozalash

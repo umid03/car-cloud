@@ -7,7 +7,7 @@ function PredictForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:5000/api/predict', formData)
+    axios.post('http://51.20.108.48:5000/api/predict', formData)
       .then(response => setPredictedPrice(response.data.predicted_price))
       .catch(error => console.error(error));
   };

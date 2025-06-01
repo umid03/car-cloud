@@ -25,7 +25,7 @@ function App() {
   const fetchCars = () => {
     setIsLoading(true);
     axios
-      .get('http://localhost:5000/api/cars')
+      .get('http://51.20.108.48:5000/api/cars')
       .then(response => {
         setCars(response.data);
         setIsLoading(false);
@@ -68,7 +68,7 @@ function App() {
     }
 
     axios
-      .post('http://localhost:5000/api/cars', newCar)
+      .post('http://51.20.108.48:5000/api/cars', newCar)
       .then(response => {
         fetchCars(); // Ma'lumotlarni qayta yuklash
         setNewCar({
@@ -110,7 +110,7 @@ function App() {
     }
 
     axios
-      .post('http://localhost:5000/api/predict', newCar)
+      .post('http://51.20.108.48:5000/api/predict', newCar)
       .then(response => {
         setPredictedPrice(response.data.predicted_price);
         setNewCar({ ...newCar, price: response.data.predicted_price.toString() });
